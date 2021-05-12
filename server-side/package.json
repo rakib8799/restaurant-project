@@ -22,9 +22,11 @@
   },
   "devDependencies": {
     "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "nodemon": "^2.0.7",
+    "peerdeps": "^1.1.1",
     "prettier": "^2.3.0"
   }
 }
