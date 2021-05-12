@@ -4,7 +4,10 @@
   "description": "It's a restaurant project which will be built with MERN stack",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "start-server": "nodemon server.js",
+    "start-client": "npm start --prefix  ../client-side",
+    "dev": "concurrently \"npm run start-server\"  \"npm run start-client\""
   },
   "keywords": [
     "MERN",
@@ -16,15 +19,19 @@
   "author": "Mehedi Khan Rakib",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^9.0.2",
     "express": "^4.17.1",
-    "mongoose": "^5.12.8"
+    "express-validator": "^6.11.1",
+    "mongoose": "^5.12.8",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "eslint": "^7.26.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "install-peerdeps": "^3.0.3",
     "nodemon": "^2.0.7",
     "peerdeps": "^1.1.1",
     "prettier": "^2.3.0"
