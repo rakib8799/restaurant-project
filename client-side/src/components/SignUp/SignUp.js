@@ -63,7 +63,7 @@ const SignUp = () => {
                         password: '',
                         confirmPassword: '',
                         loading: false,
-                        // successMsg: res.data.successMessage,
+                        successMsg: res.data.successMessage,
                     });
                 })
                 .catch((err) => {

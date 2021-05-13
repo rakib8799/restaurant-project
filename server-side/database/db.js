@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async ()=>{
 try{
-        await  mongoose.connect(`mongodb+srv://mkrakib:Amirakib007@cluster0.jbzpp.mongodb.net/ecommerce?retryWrites=true&w=majority`,{
+        await  mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.jbzpp.mongodb.net/${process.env.DB_DATABASE}?retryWrites=true&w=majority`,{
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
